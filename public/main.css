@@ -1,0 +1,74 @@
+/*body {
+  text-align: center;
+}*/
+
+#board {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 2em;
+}
+
+#welcome-message, #floating-message {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+  animation: fade-in 5s;
+  color: brown;
+  font-family: system-ui  ;
+}
+
+#start-game-button {
+  display: block;
+  margin: auto;
+  margin-top: 90px;
+  width: 250px;
+  height: 75px;
+  background-color: lightcoral;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 30px;
+  color: white;
+  border: 2px solid #000000;
+}
+
+#player-options {
+  background-color: lightcoral;
+  border: 2px solid #000000;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 1%;
+}
+
+.disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
